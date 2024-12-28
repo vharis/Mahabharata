@@ -1,7 +1,7 @@
 from langchain_ollama import OllamaEmbeddings
 
 from langchain_community.vectorstores import FAISS 
-from langchain_community.docstore.in_memory import InMemoryDocstore
+# from langchain_community.docstore.in_memory import InMemoryDocstore
 import streamlit as st
 from langchain_ollama import ChatOllama
 
@@ -9,14 +9,16 @@ from langchain_ollama import ChatOllama
 from langchain_core.runnables.history import RunnableWithMessageHistory
 
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough 
+# from langchain_core.runnables import RunnablePassthrough 
 from langchain_core.prompts import ChatPromptTemplate
-from opik.integrations.langchain import OpikTracer
+# from opik.integrations.langchain import OpikTracer
 from langchain_community.chat_message_histories import SQLChatMessageHistory
-import opik
-import os
+# import opik
+# import os
 
-embeddings = OllamaEmbeddings(model='nomic-embed-text', base_url='http://localhost:11434')
+embeddings = OllamaEmbeddings(model='nomic-embed-text')
+
+# embeddings = OllamaEmbeddings(model='nomic-embed-text', base_url='http://localhost:11434')
 
 db_name = "Mahabhararta_KMGanguli"
 vector_store = FAISS.load_local(db_name, embeddings, allow_dangerous_deserialization=True)
@@ -43,7 +45,7 @@ prompt = ChatPromptTemplate.from_template(prompt)
 
 
 
-st.title("RAG based MAHABHARATA Chatbot v0.2")
+st.title("MAHABHARATA Chatbot v0.2")
 #st.write("I'm your financial assistant. I can help you with your financial queries.")
 # user_id = st.text_input("Enter your user id", "vharis")
 
