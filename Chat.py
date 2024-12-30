@@ -16,13 +16,13 @@ from langchain_community.chat_message_histories import SQLChatMessageHistory
 # import opik
 # import os
 
-embeddings = OllamaEmbeddings(model='nomic-embed-text')
+# embeddings = OllamaEmbeddings(model='nomic-embed-text')
 
-# embeddings = OllamaEmbeddings(model='nomic-embed-text', base_url='http://localhost:11434')
+embeddings = OllamaEmbeddings(model='nomic-embed-text', base_url='http://localhost:11434')
 
 db_name = "Mahabhararta_KMGanguli"
 vector_store = FAISS.load_local(db_name, embeddings, allow_dangerous_deserialization=True)
-question = "who is the father of pandu"
+question = "Type your question?"
 docs = vector_store.search(query=question, k=5, search_type="similarity")
 
 # retriever = vector_store.as_retriever(search_type = 'similarity', search_kwargs = {'k': 3})
@@ -45,7 +45,7 @@ prompt = ChatPromptTemplate.from_template(prompt)
 
 
 
-st.title("MAHABHARATA Chatbot v0.2")
+st.title("FIRST Chatbot v0.2")
 #st.write("I'm your financial assistant. I can help you with your financial queries.")
 # user_id = st.text_input("Enter your user id", "vharis")
 
@@ -82,7 +82,7 @@ def chat_with_llm(session_id, input):
         yield output
 
 
-query = st.chat_input("Ask your Mahabharata question?")
+query = st.chat_input("Ask your FIRST question?")
 # st.write(prompt)
 
 if query:

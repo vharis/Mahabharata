@@ -40,7 +40,7 @@ Navigate to the URL provided by Streamlit in your browser to interact with the a
 
 Interested in contributing to this app?
 
--Let's connect over mail -> vharis@gmail.com and yjankay@gmail.com
+-Let's connect over mail -> vharis@gmail.com 
 
 Got questions or suggestions?
 
