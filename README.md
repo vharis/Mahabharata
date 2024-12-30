@@ -29,7 +29,7 @@ pip install -r requirements.txt
 To start the app, run the following command in your terminal:
 
 ```
-streamlit run Chat.py
+streamlit run mahabharat.py
 ```
 
 Navigate to the URL provided by Streamlit in your browser to interact with the app.
@@ -40,7 +40,7 @@ Navigate to the URL provided by Streamlit in your browser to interact with the a
 
 Interested in contributing to this app?
 
--Let's connect over mail -> vharis@gmail.com and yjankay@gmail.com
+-Let's connect over mail -> vharis@gmail.com 
 
 Got questions or suggestions?
 
@@ -48,4 +48,11 @@ Got questions or suggestions?
 
 ## Acknowledgments
 
-Kudos to the [Ollama](https://ollama.com/) team for making open-source models more accessible!
+Kudos to
+[Ollama](https://ollama.com/) team for making open-source models more accessible!
+
+https://www.holybooks.com/wp-content/uploads/MahabharataOfVyasa-EnglishTranslationByKMGanguli.pdf
+
+https://streamlit.io/
+
+https://www.langchain.com/
