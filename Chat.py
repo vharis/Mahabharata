@@ -45,7 +45,7 @@ prompt = ChatPromptTemplate.from_template(prompt)
 
 
 
-st.title("FIRST Chatbot v0.2")
+st.title("MAHABHARATA Chatbot v0.2")
 #st.write("I'm your financial assistant. I can help you with your financial queries.")
 # user_id = st.text_input("Enter your user id", "vharis")
 
@@ -82,7 +82,7 @@ def chat_with_llm(session_id, input):
         yield output
 
 
-query = st.chat_input("Ask your FIRST question?")
+query = st.chat_input("Ask your MAHABHARATA question?")
 # st.write(prompt)
 
 if query:
